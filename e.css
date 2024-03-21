@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+}
+#myBox{
+    width: 100px;
+    height: 100px;
+    border: 2px red solid;
+    background-color: rgba(230, 15, 15, 0.712);
+    font-size: 60px;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+#winBox{
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    font-size: 60px;
+    justify-content: center;
+    text-align: center;
+    top: 600px;
+    left: 1300px;
+}

@@ -16,7 +16,7 @@ let myBoxBorder_bottom;
 let myBoxBorder_top;
 let myBoxBorder_left;
 let myBoxBorder_right;
-
+let ciao;
 document.addEventListener("keydown", event => {
 
     if(event.key == "a" || event.key == "s" || event.key == "d" || event.key == "w"){

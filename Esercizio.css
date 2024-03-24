@@ -1,0 +1,41 @@
+#cronometro{
+    text-align: center;
+    background-color: bisque;
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 20px;
+    max-width: 250px;
+}
+
+#display{
+    margin: 5px;
+    font-size: 2em;
+}
+
+button{
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+#btnStart{
+    background-color: rgb(87, 199, 87);
+}
+#btnStart:hover{
+    background-color: rgb(68, 175, 68);
+}
+
+#btnStop{
+    background-color: rgb(199, 87, 87);
+}
+#btnStop:hover{
+    background-color: rgb(175, 68, 68);
+}
+
+#btnReset{
+    background-color: rgb(186, 87, 199);
+}
+#btnReset:hover{
+    background-color: rgb(155, 65, 167);
+}

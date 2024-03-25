@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+#toDoList{
+    border: 1px solid;
+    min-height: 200px;
+    border-radius: 20px;
+    background-color: bisque;
+    text-align: center;
+    display: inline-block;
+    min-width: 500px;
+}

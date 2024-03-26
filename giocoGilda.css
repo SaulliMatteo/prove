@@ -1,0 +1,18 @@
+.oggetti{
+    width: 98px;
+    height: 98px;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.5em;
+    position: absolute;
+}
+#finishLine{
+    position: absolute;
+    top: 70%;
+    left: 90%;
+}
+#finishLine_hitBox{
+    position: absolute;
+    top: 70%;
+    left: 90%;
+}

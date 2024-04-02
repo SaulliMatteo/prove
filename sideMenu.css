@@ -1,0 +1,315 @@
+:root{
+    --body-color: hsl(0, 0%, 97%);
+    --sideMenu-color: hsl(0, 0%, 90%);
+    --switch-color: hsl(0, 0%, 80%);
+    --text-color: hsl(31, 15%, 27%);
+    --icon-color: hsl(30, 69%, 32%);
+    --primary-color: hsl(300, 76%, 72%);
+    --secondary-color: hsl(207, 88%, 94%);
+    --line-color: hsl(0, 0%, 0%);
+
+    --animationDelay-05: all 0.5s ease; 
+    --animationDelay-1: all 1s ease; 
+}
+
+body{
+    background-color: var(--body-color);
+    margin: 0;
+    height: 100vh;
+    transition: var(--animationDelay-1);
+}
+
+.side-menu{
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    background-color: var(--sideMenu-color);
+    transition: var(--animationDelay-1);
+
+}
+
+.side-menu .switch-text,
+.side-menu .option-text,
+.side-menu .title-text{
+    overflow: hidden;
+}
+
+/*=====menu-title=====*/
+.side-menu .menu-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 97%;
+    height: 45px;
+    margin: 5px;
+    padding-bottom: 5px;
+}
+
+.menu-title .title-img{
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.menu-title .title-text{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--text-color) ;
+    padding-left: 20px;
+}
+
+.title-text .title-name{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.title-text .title-occupation{
+    padding-left: 20px;
+}
+/*==========*/
+
+/*=====menu-option*/
+.menu-option li{
+    list-style: none;
+    display: flex;
+}
+
+.menu-option .option{
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    
+}
+
+.menu-option a{
+    text-decoration: none;
+    min-height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    margin: 5px;
+    transition: var(--animationDelay-1);
+}
+
+.menu-option a:hover{
+    background-color: var(--primary-color);
+}
+.menu-option a:hover .icon,
+.menu-option a:hover .option-text{
+    color: var(--secondary-color);
+}
+
+.menu-option li .icon{
+    color: var(--icon-color);
+    font-size: 40px;
+    transition: var(--animationDelay-05); 
+}
+
+.menu-option li .option-text{
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: lighter;
+    padding-left: 20px;
+    transition: var(--animationDelay-05); 
+}
+/*==========*/
+
+/*=====search-bar======*/
+.menu-searchBar{
+    display: flex;
+    min-height: 40px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu-searchBar .searchBar-img{
+    min-width: 60px;
+    height: 100%;
+    color: var(--icon-color);
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-searchBar .searchBar{
+    width: 100%;
+    height: 36px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 5px;
+    background-color: var(--body-color);
+    transition: var(--animationDelay-1)
+}
+
+.line{
+    font-size: 1px;
+    color: var(--line-color);
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 2px;
+}
+/*==========*/
+
+/*=====bottom-content=====*/
+.bottom-content li{
+    list-style: none;
+    display: flex;
+}
+
+.bottom-content .option{
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.bottom-content a{
+    text-decoration: none;
+    min-height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    margin: 5px;
+    transition: var(--animationDelay-1);
+}
+
+.bottom-content a:hover{
+    background-color: var(--primary-color);
+}
+.bottom-content a:hover .icon,
+.bottom-content a:hover .option-text{
+    color: var(--secondary-color);
+}
+
+.bottom-content li .icon{
+    color: var(--icon-color);
+    font-size: 40px;
+    transition: var(--animationDelay-05); 
+}
+
+.bottom-content li .option-text{
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: lighter;
+    padding-left: 20px;
+    transition: var(--animationDelay-05); 
+}
+
+.bottom-content .switch-option{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bottom-content .switch-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 100%;
+}
+
+.bottom-content .visibility{
+    display: none;
+}
+
+.bottom-content .switch-text{
+    font-size: 25px;
+    color: var(--text-color);
+    margin-left: 5px;
+}
+
+.bottom-content .toggle-switch{
+    background-color: var(--body-color);
+    width: 55px;
+    height: 25px;
+    border-radius: 20px;
+    margin-left: 5px;
+    position: relative;
+    cursor: pointer;
+    transition: var(--animationDelay-1)
+}
+
+.toggle-switch .switch::before{
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 5px;
+    border-radius: 50%;
+    background-color: var(--switch-color);
+    top: 50%;
+    transform: translateY(-50%);
+    transition: var(--animationDelay-05);
+}
+/*==========*/
+
+/*=====toggle=====*/
+.toggle{
+    font-size: 30px;
+    position: absolute;
+    left: 96%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    transition: var(--animationDelay-05);
+    cursor: pointer;
+}
+.toggle:hover{
+    color: var(--secondary-color);
+}
+.toggle .display{
+    display: none;
+}
+/*==========*/
+
+/*=====Dark-Mode=====*/
+body.Dark{
+    --body-color: hsl(0, 1%, 31%);
+    --sideMenu-color: hsl(0, 1%, 19%);
+    --switch-color: hsl(0, 0%, 80%);
+    --text-color: hsl(27, 4%, 51%);
+    --icon-color: hsl(30, 87%, 22%);
+    --primary-color: hsl(300, 49%, 28%);
+    --secondary-color: hsl(212, 8%, 61%);
+    --line-color: hsl(0, 0%, 0%);
+}
+body.Dark .bottom-content .switch::before{
+    left: 58%;
+}
+/*==========*/
+
+/*=====Close-Bar=====*/
+.side-menu.close{
+    width: 60px;
+}
+
+.side-menu.close .switch-text{
+    display: none;
+}
+
+.side-menu.close .switch-option{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.side-menu.close .switch-option .toggle-switch{
+    margin-right: 10px;
+}
+.side-menu.close a{
+    width: 76%;
+}
+/*==========*/
